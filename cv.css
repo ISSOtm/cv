@@ -1,0 +1,119 @@
+html {
+	font-size: 18px;
+	line-height: 1.4;
+	text-align: justify;
+
+	background-color: #fff;
+	padding: 0 10px;
+	font-family: Inter, sans-serif;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+body > hr {
+	clear: both;
+}
+
+h2 {
+	font-size: 27px;
+}
+
+a:visited {
+	color: rgb(0, 0, 238);
+}
+
+/** Header **/
+
+#address {
+	float: left;
+	text-align: left;
+}
+
+#contact {
+	float: right;
+	text-align: right;
+}
+
+#title {
+	text-align: center;
+}
+
+#name {
+	font-size: 120%;
+	font-weight: bolder;
+}
+#surname {
+	font-variant-caps: small-caps;
+}
+
+
+/** Main content **/
+
+main {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 4fr 4fr;
+	column-gap: 40px;
+	counter-reset: col;
+}
+
+main > .column {
+	counter-increment: col;
+	grid-column: counter(col);
+}
+
+main > .column > section > h2 {
+	font-variant-caps: small-caps;
+	font-family: sans-serif;
+	color: #33f;
+	font-weight: lighter;
+
+	margin-bottom: 0;
+	margin-left: 1%;
+}
+
+main > .column > section > hr {
+	margin-top: 0;
+	color: blue;
+}
+
+main > .column > section > :nth-child(n+3) {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+
+/** Named lists **/
+
+dt, dd {
+	margin: 0;
+}
+
+dl.oneline {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	column-gap: 40px;
+}
+
+dl.oneline > dt {
+	grid-column: 1;
+}
+
+dl.oneline > dd {
+	grid-column: 2;
+}
+
+
+/** Experience lists **/
+
+.experiences > dt {
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+.experiences > dt:nth-child(n+1) {
+	margin-top: 10px;
+}
