@@ -3,7 +3,7 @@ html {
 	line-height: 1.4;
 	text-align: justify;
 
-	background-color: #fff;
+	background-color: #fbfbfc;
 	padding: 0 10px;
 	font-family: Inter, sans-serif;
 }
@@ -19,10 +19,6 @@ body > hr {
 
 h2 {
 	font-size: 27px;
-}
-
-a:visited {
-	color: rgb(0, 0, 238);
 }
 
 /** Header **/
