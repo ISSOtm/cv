@@ -17,6 +17,10 @@ body > hr {
 	clear: both;
 }
 
+h1 {
+	font-size: 2em;
+}
+
 h2 {
 	font-size: 27px;
 }
@@ -53,12 +57,14 @@ main {
 	display: grid;
 	grid-template-columns: 4fr 4fr;
 	column-gap: 40px;
-	counter-reset: col;
 }
 
-main > .column {
-	counter-increment: col;
-	grid-column: counter(col);
+main > .column:first-child {
+	grid-column: 1;
+}
+
+main > .column:last-child {
+	grid-column: 2;
 }
 
 main > .column > section > h2 {
